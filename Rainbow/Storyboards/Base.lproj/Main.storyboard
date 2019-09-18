@@ -27,7 +27,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="HBR-tm-P9C" kind="show" identifier="Color" id="xMN-VT-Ig9"/>
+                                    <segue destination="HBR-tm-P9C" kind="show" identifier="ShowColorSegue" id="xMN-VT-Ig9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
