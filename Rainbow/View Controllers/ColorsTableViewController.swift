@@ -25,8 +25,8 @@ class ColorsTableViewController: UITableViewController {
 
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell", for: indexPath)
-// let color = colors[indexPath.row]
-   // cell.textLabel.text = color
+let color = colors[indexPath.row]
+cell.textLabel?.text = color.name
     return cell
 }
 }
