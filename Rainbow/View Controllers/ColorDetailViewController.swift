@@ -6,4 +6,8 @@
 //  Copyright © 2019 Knight Night. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ColorDetailViewController: UIViewController {
+
+}
