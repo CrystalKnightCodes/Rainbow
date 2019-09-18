@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1028.985507246377" y="94.419642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Color Detail View Controller-->
         <scene sceneID="ebp-6d-4hR">
             <objects>
-                <viewController id="HBR-tm-P9C" sceneMemberID="viewController">
+                <viewController id="HBR-tm-P9C" customClass="ColorDetailViewController" customModule="Rainbow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rcq-QM-Vkq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,8 +62,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2QK-t4-Fhz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M2Y-ql-xAN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="M2Y-ql-xAN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
