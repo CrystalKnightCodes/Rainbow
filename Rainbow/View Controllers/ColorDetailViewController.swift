@@ -22,4 +22,5 @@ class ColorDetailViewController: UIViewController {
         guard let cellColor = cellColor else { return }
         title = cellColor.name
         view.backgroundColor = cellColor.color
+    }
 }
