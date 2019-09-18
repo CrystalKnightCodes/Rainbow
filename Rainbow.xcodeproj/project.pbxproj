@@ -14,6 +14,7 @@
 		BAC5E0EB2331CB430013CFE3 /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E0EA2331CB430013CFE3 /* ColorsTableViewController.swift */; };
 		BAC5E0ED2331CBD90013CFE3 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E0EC2331CBD90013CFE3 /* ColorDetailViewController.swift */; };
 		BAC5E0F02331D1530013CFE3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E0EF2331D1530013CFE3 /* Color.swift */; };
+		BAC5E0F12331E6550013CFE3 /* Rainbow.app in Resources */ = {isa = PBXBuildFile; fileRef = BAC5E0D22331C9500013CFE3 /* Rainbow.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC5E0F12331E6550013CFE3 /* Rainbow.app in Resources */,
 				BAC5E0E02331C9510013CFE3 /* LaunchScreen.storyboard in Resources */,
 				BAC5E0DD2331C9510013CFE3 /* Assets.xcassets in Resources */,
 				BAC5E0DB2331C9500013CFE3 /* Main.storyboard in Resources */,

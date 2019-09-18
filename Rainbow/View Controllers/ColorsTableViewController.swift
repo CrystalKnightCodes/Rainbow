@@ -29,6 +29,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     cell.textLabel?.text = color.name
     return cell
 }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowColorSegue" {
             guard let detailVC = segue.destination as? ColorDetailViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -47,6 +48,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
         alert.addTextField { (textField) in
             textField.placeholder = "Red 0-255"
         }
+        
         alert.addTextField { (textField) in
             textField.placeholder = "Blue 0-255"
         }
