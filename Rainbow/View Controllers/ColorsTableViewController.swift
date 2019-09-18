@@ -36,4 +36,44 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
             detailVC.cellColor = color
         }
     }
+    
+    @IBAction func addNewColor(_ sender: Any) {
+        let alert = UIAlertController(title: "Add Color", message: "Specify a color to add values should be 0-255", preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Color Name"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Red 0-255"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Blue 0-255"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Green 0-255"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+            guard let name = alert.textFields?[0].text, !name.isEmpty else { return }
+            
+            guard let redString = alert.textFields?[1].text,
+                let redValue = Double(redString) else { return }
+            guard let blueString = alert.textFields?[2].text,
+                let blueValue = Double(blueString) else { return }
+            guard let greenString = alert.textFields?[3].text,
+                let greenValue = Double(greenString) else { return }
+            
+            let color = Color(name: name, color: UIColor(red: CGFloat(redValue/255.0), green: (CGFloat(greenValue/255.0)), blue: (CGFloat(blueValue/255.0)), alpha: 1.0))
+            
+              self.colors.append(color)
+              self.tableView.reloadData()
+            
+            
+        }))
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
 }
